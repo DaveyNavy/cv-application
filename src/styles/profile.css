@@ -1,0 +1,26 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.profile > h1 {
+    align-self: flex-start;
+}
+
+input {
+    border-color: rgba(44,105,140,0.3);
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    align-self: flex-end;
+}
