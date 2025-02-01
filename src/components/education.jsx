@@ -12,7 +12,7 @@ export default function Education ({ education, setEducation }) {
 
             <div className="row">
                 <label htmlFor="major">Major</label>
-                <input type="email" id="major" name="major" placeholder="Herbology" value={education.major} onChange={(e) => setEducation({...education, major: e.target.value})}/>
+                <input type="text" id="major" name="major" placeholder="Herbology" value={education.major} onChange={(e) => setEducation({...education, major: e.target.value})}/>
             </div>
 
             <div className="row">

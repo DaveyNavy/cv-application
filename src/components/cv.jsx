@@ -1,8 +1,6 @@
 import "../styles/cv.css"
 
 export default function CV({ hide, profile, education }) {
-    console.log(education)
-
     const accomplishments = education.achievements.split(/\n/);
 
     return (
