@@ -1,0 +1,53 @@
+.cv {
+    width: 850px;
+    height: 1200px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 5rem;
+}
+
+section {
+    width: 100%;
+}
+
+.cv-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cv-profile h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.cv-profile h2 {
+    font-weight: lighter;
+}
+
+hr {
+    width: 100%;
+}
+
+.cv-education {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cv-education .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+
+.cv-education .heading {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
