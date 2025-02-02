@@ -1,6 +1,6 @@
 import "../styles/cv.css"
 
-export default function CV({ hide, profile, education }) {
+export default function CV({ hide, profile, education, experience }) {
     const accomplishments = education.achievements.split(/\n/);
 
     return (
@@ -30,6 +30,23 @@ export default function CV({ hide, profile, education }) {
             <section className="cv-experience">
                 <h1>EXPERIENCE</h1>
                 <hr />
+                
+                {
+                    experience.map((e)=> {
+                        return (
+                            <div className="content" key={e.div}>
+                                <div className="heading">
+                                    <h3>{e.position} - {e.company}</h3>
+                                    <h3>{e.startDate} - {e.endDate}</h3>
+                                </div>
+                                
+                                {e.responsibilities.split(/\n/).map((ele, i) => {
+                                    return <p key={i} style={{paddingLeft: "1rem"}}> - {ele}</p>;
+                                })}
+                            </div>
+                        )
+                    })
+                }
             </section>
         </div>
     )

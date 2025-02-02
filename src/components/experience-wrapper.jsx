@@ -3,17 +3,17 @@ import { useState } from "react";
 import "../styles/experience.css"
 
 export default function ExperienceWrapper({ experience, setExperience }) {
-    const [experiences, setExperiences] = useState([0]);
+    const [id, setId] = useState(1); 
 
     function addExperience() {
-        setExperiences([...experiences, experiences.length]);
+        setExperience([...experience, {"id": id, "company": '', "position": '', "startDate": '', "endDate": '', "responsibilities": ''}]);
+        setId(id + 1);
     }
 
-    console.log(experiences)
     return (
         <section className="experience-wrapper">
             <h1>Experiences</h1>
-            {experiences.map((e) => <Experience experience={experience} setExperience={setExperience} id={e} key={e}></Experience>)}
+            {experience.map((e) => <Experience experience={experience} setExperience={setExperience} id={e.id} key={e.id}></Experience>)}
             <button type="button" onClick={addExperience}>Add Experience</button>
         </section>
     )

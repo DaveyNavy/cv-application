@@ -33,7 +33,9 @@
     width: 150px;
 }
 
-button {
-    align-self: flex-end;
+.button-tray {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
 }
-

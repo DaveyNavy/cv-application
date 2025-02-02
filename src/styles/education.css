@@ -5,6 +5,12 @@
     gap: 1rem;
 }
 
+.education .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .row {
     display: flex;
     flex-direction: column;
